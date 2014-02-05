@@ -3,29 +3,46 @@
 App::uses('AppModel', 'Model');
 
 /**
- * Location Model
+ * Entrepreneur Model
  *
  * @property Experience $Experience
- * @property Photo $Photo
- * @property Video $Video
  */
+class Entrepreneur extends AppModel {
 
-class Location extends AppModel {
-    
     /**
      * Display field
      *
      * @var string
      */
-    public $displayField = 'title';
-    
+    public $displayField = 'firstname';
+
     /**
      * Validation rules
      *
      * @var array
      */
     public $validate = array(
-        'title' => array(
+        'firstname' => array(
+            'notEmpty' => array(
+                'rule' => array('notEmpty'),
+            //'message' => 'Your custom message here',
+            //'allowEmpty' => false,
+            //'required' => false,
+            //'last' => false, // Stop validation after this rule
+            //'on' => 'create', // Limit validation to 'create' or 'update' operations
+            ),
+        ),
+        'lastname' => array(
+            'notEmpty' => array(
+                'rule' => array('notEmpty'),
+            //'message' => 'Your custom message here',
+            //'allowEmpty' => false,
+            //'required' => false,
+            //'last' => false, // Stop validation after this rule
+            //'on' => 'create', // Limit validation to 'create' or 'update' operations
+            ),
+        ),
+        'gender' => array(
             'notEmpty' => array(
                 'rule' => array('notEmpty'),
             //'message' => 'Your custom message here',
@@ -45,9 +62,29 @@ class Location extends AppModel {
             //'on' => 'create', // Limit validation to 'create' or 'update' operations
             ),
         ),
-        'longdesc' => array(
+        'phone1' => array(
             'notEmpty' => array(
                 'rule' => array('notEmpty'),
+            //'message' => 'Your custom message here',
+            //'allowEmpty' => false,
+            //'required' => false,
+            //'last' => false, // Stop validation after this rule
+            //'on' => 'create', // Limit validation to 'create' or 'update' operations
+            ),
+        ),
+        'phone2' => array(
+            'notEmpty' => array(
+                'rule' => array('notEmpty'),
+            //'message' => 'Your custom message here',
+            //'allowEmpty' => false,
+            //'required' => false,
+            //'last' => false, // Stop validation after this rule
+            //'on' => 'create', // Limit validation to 'create' or 'update' operations
+            ),
+        ),
+        'email' => array(
+            'email' => array(
+                'rule' => array('email'),
             //'message' => 'Your custom message here',
             //'allowEmpty' => false,
             //'required' => false,
@@ -58,46 +95,6 @@ class Location extends AppModel {
         'address' => array(
             'notEmpty' => array(
                 'rule' => array('notEmpty'),
-            //'message' => 'Your custom message here',
-            //'allowEmpty' => false,
-            //'required' => false,
-            //'last' => false, // Stop validation after this rule
-            //'on' => 'create', // Limit validation to 'create' or 'update' operations
-            ),
-        ),
-        'country' => array(
-            'notEmpty' => array(
-                'rule' => array('notEmpty'),
-            //'message' => 'Your custom message here',
-            //'allowEmpty' => false,
-            //'required' => false,
-            //'last' => false, // Stop validation after this rule
-            //'on' => 'create', // Limit validation to 'create' or 'update' operations
-            ),
-        ),
-        'state' => array(
-            'notEmpty' => array(
-                'rule' => array('notEmpty'),
-            //'message' => 'Your custom message here',
-            //'allowEmpty' => false,
-            //'required' => false,
-            //'last' => false, // Stop validation after this rule
-            //'on' => 'create', // Limit validation to 'create' or 'update' operations
-            ),
-        ),
-        'latude' => array(
-            'numeric' => array(
-                'rule' => array('numeric'),
-            //'message' => 'Your custom message here',
-            //'allowEmpty' => false,
-            //'required' => false,
-            //'last' => false, // Stop validation after this rule
-            //'on' => 'create', // Limit validation to 'create' or 'update' operations
-            ),
-        ),
-        'longitude' => array(
-            'numeric' => array(
-                'rule' => array('numeric'),
             //'message' => 'Your custom message here',
             //'allowEmpty' => false,
             //'required' => false,
@@ -117,7 +114,7 @@ class Location extends AppModel {
     public $hasMany = array(
         'Experience' => array(
             'className' => 'Experience',
-            'foreignKey' => 'location_id',
+            'foreignKey' => 'entrepreneur_id',
             'dependent' => false,
             'conditions' => '',
             'fields' => '',
@@ -130,38 +127,4 @@ class Location extends AppModel {
         )
     );
 
-    /**
-     * hasAndBelongsToMany associations
-     *
-     * @var array
-     */
-    public $hasAndBelongsToMany = array(
-        'Photo' => array(
-            'className' => 'Photo',
-            'joinTable' => 'locations_photos',
-            'foreignKey' => 'location_id',
-            'associationForeignKey' => 'photo_id',
-            'unique' => 'keepExisting',
-            'conditions' => '',
-            'fields' => '',
-            'order' => '',
-            'limit' => '',
-            'offset' => '',
-            'finderQuery' => '',
-        ),
-        'Video' => array(
-            'className' => 'Video',
-            'joinTable' => 'locations_videos',
-            'foreignKey' => 'location_id',
-            'associationForeignKey' => 'video_id',
-            'unique' => 'keepExisting',
-            'conditions' => '',
-            'fields' => '',
-            'order' => '',
-            'limit' => '',
-            'offset' => '',
-            'finderQuery' => '',
-        )
-    );
-    
 }
