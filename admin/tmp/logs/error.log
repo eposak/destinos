@@ -1,0 +1,45 @@
+2014-01-30 22:00:26 Error: [MissingActionException] Action LocationsController::hola() could not be found.
+Exception Attributes: array (
+  'controller' => 'LocationsController',
+  'action' => 'hola',
+)
+Request URL: /destinos/locations/hola
+Stack Trace:
+#0 C:\wamp\www\destinos\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\destinos\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LocationsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\destinos\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-30 22:00:48 Error: [MissingViewException] View file "C:\wamp\www\destinos\app\View\Locations\hola.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\destinos\\app\\View\\Locations\\hola.ctp',
+)
+Request URL: /destinos/locations/hola
+Stack Trace:
+#0 C:\wamp\www\destinos\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\wamp\www\destinos\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\destinos\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\destinos\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LocationsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\destinos\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-30 22:24:06 Error: [MissingActionException] Action LocationsController::hola() could not be found.
+Exception Attributes: array (
+  'controller' => 'LocationsController',
+  'action' => 'hola',
+)
+Request URL: /destinos/locations/hola
+Stack Trace:
+#0 C:\wamp\www\destinos\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\destinos\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LocationsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\destinos\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-30 22:31:55 Error: [MissingActionException] Action LocationsController::hola() could not be found.
+Exception Attributes: array (
+  'controller' => 'LocationsController',
+  'action' => 'hola',
+)
+Request URL: /destinos/locations/hola
+Stack Trace:
+#0 C:\wamp\www\destinos\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\destinos\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LocationsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\destinos\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

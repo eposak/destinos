@@ -51,22 +51,6 @@ Cache::config('default', array('engine' => 'File'));
  *
  */
 
-App::build(array(
-     'Model'                     => array('../../admin/Model/'),
-     'Model/Behavior'            => array('../../admin/Model/Behavior/'),
-     'Model/Datasource'          => array('../../admin/Model/Datasource/'),
-     'Model/Datasource/Database' => array('../../admin/Model/Datasource/Database/'),
-     'Model/Datasource/Session'  => array('../../admin/Model/Datasource/Session/'),
-     'View/Helper'               => array('../../admin/View/Helper/'),
-     'Console'                   => array('../../admin/Console/'),
-     'Console/Command'           => array('../../admin/Console/Command/'),
-     'Console/Command/Task'      => array('../../admin/Console/Command/Task/'),
-     'Lib'                       => array('../../admin/Lib/'),
-     // 'Locale'                    => array('/path/to/locales/', '/next/path/to/locales/'),
-     // 'Vendor'                    => array('/path/to/vendors/', '/next/path/to/vendors/'),
-     'Plugin'                    => array('../../admin/Plugin/'),
-));
-
 /**
  * Custom Inflector rules can be set to correctly pluralize or singularize table, model, controller names or whatever other
  * string is passed to the inflection functions
