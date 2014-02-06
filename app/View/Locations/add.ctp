@@ -3,7 +3,7 @@
 	<fieldset>
 		<legend><?php echo __('Add Location'); ?></legend>
 	<?php
-		echo $this->Form->input('title', array('label' => 'Nombre del destino'));
+		echo $this->Form->input('title');
 		echo $this->Form->input('description');
 		echo $this->Form->input('longdesc');
 		echo $this->Form->input('address');
@@ -14,6 +14,8 @@
 		echo $this->Form->input('latude');
 		echo $this->Form->input('longitude');
 		echo $this->Form->input('map');
+		echo $this->Form->input('Photo');
+		echo $this->Form->input('Video');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
@@ -23,5 +25,11 @@
 	<ul>
 
 		<li><?php echo $this->Html->link(__('List Locations'), array('action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('List Experiences'), array('controller' => 'experiences', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Experience'), array('controller' => 'experiences', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Photos'), array('controller' => 'photos', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Photo'), array('controller' => 'photos', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Videos'), array('controller' => 'videos', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Video'), array('controller' => 'videos', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

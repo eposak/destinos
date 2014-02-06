@@ -15,6 +15,8 @@
 		echo $this->Form->input('latude');
 		echo $this->Form->input('longitude');
 		echo $this->Form->input('map');
+		echo $this->Form->input('Photo');
+		echo $this->Form->input('Video');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
@@ -25,5 +27,11 @@
 
 		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Location.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('Location.id'))); ?></li>
 		<li><?php echo $this->Html->link(__('List Locations'), array('action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('List Experiences'), array('controller' => 'experiences', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Experience'), array('controller' => 'experiences', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Photos'), array('controller' => 'photos', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Photo'), array('controller' => 'photos', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Videos'), array('controller' => 'videos', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Video'), array('controller' => 'videos', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

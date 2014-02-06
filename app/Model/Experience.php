@@ -166,7 +166,7 @@ class Experience extends AppModel {
 		'Photo' => array(
 			'className' => 'Photo',
 			'joinTable' => 'experiences_photos',
-			'foreignKey' => 'experience_id',
+			'foreignKey' => 'id',
 			'associationForeignKey' => 'photo_id',
 			'unique' => 'keepExisting',
 			'conditions' => '',

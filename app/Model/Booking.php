@@ -14,7 +14,7 @@ class Booking extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'mid';
+	public $displayField = 'id';
 
 /**
  * Validation rules
