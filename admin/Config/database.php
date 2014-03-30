@@ -67,7 +67,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => '',
-		'database' => 'destino_dev',
+		'database' => 'destinos_dev',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);

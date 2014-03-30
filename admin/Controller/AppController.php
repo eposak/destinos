@@ -31,9 +31,17 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
     
-    public $components = array('DebugKit.Toolbar', 'Paginator', 'Session');
+    public $components = array('DebugKit.Toolbar', 'Paginator', 'Session', 'Auth');
     
     public $helpers = array('Html', 'Form', 'Js');
+    
+    public function beforeFilter() {
+        
+        // $this->Auth->allow('display');
+        $this->Auth->loginRedirect = array('controller' => 'locations', 'action' => 'index');
+        $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login');
+        $this->Auth->authError = 'Acceso no permitido';
+    }
     
     
 }
