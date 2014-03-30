@@ -41,7 +41,9 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<div id="container">
             
 		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+			<h1>Destinos Eposak (Administrador) </h1>
+                        <?php echo $this->Html->image('logo.png');?>
+                        
 		</div>
 		<div id="content">
 
