@@ -1,0 +1,66 @@
+h3 {
+    cursor: default !important;
+}
+
+.container{
+    width: 970px !important;
+}
+
+.jumbotron {
+    text-shadow: 0.1em 0.1em #333;
+    color: #fff;
+    text-align: right;
+}
+
+.project .jumbotron {
+    height: 310px;
+}
+
+.nospace {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.main-logo {
+    float: left; 
+    margin-right: 10px;
+}
+
+.slogan {
+    display: inline-block;
+    color: #bbb;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-size: 15px;
+    cursor: default;
+}
+
+.page-header {
+    margin: 40px 0;
+    border-bottom: 10px solid #366111;
+    margin-bottom: 10px;
+}
+
+.breadcrumb .btn {
+    cursor: default;
+}
+
+.breadcrumb li:before {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.breadcrumb .active .btn {
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.btn-largest {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.shadow-box {
+    background: url(../img/shadowbox.png) no repeat;
+}
