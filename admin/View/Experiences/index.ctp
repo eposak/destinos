@@ -1,20 +1,20 @@
 <div class="experiences index">
-    <h2><?php echo __('Experiences'); ?></h2>
+    <h2><?php echo __('Lista de Experiencias'); ?></h2>
     <div class="actions"><?php echo $this->Html->link('Nuevo', array('action' => 'add')); ?></div>
     <table cellpadding="0" cellspacing="0">
         <tr>
             <th><?php echo $this->Paginator->sort('id'); ?></th>
-            <th><?php echo $this->Paginator->sort('title'); ?></th>
-            <th><?php echo $this->Paginator->sort('description'); ?></th>
-            <th><?php echo $this->Paginator->sort('picture'); ?></th>
-            <th><?php echo $this->Paginator->sort('days'); ?></th>
-            <th><?php echo $this->Paginator->sort('nights'); ?></th>
-            <th><?php echo $this->Paginator->sort('departure'); ?></th>
-            <th><?php echo $this->Paginator->sort('arrival'); ?></th>
-            <th><?php echo $this->Paginator->sort('location_id'); ?></th>
-            <th><?php echo $this->Paginator->sort('entrepreneur_id'); ?></th>
-            <th><?php echo $this->Paginator->sort('created'); ?></th>
-            <th><?php echo $this->Paginator->sort('modified'); ?></th>
+            <th><?php echo $this->Paginator->sort('title','Titulo'); ?></th>
+            <th><?php echo $this->Paginator->sort('description','Descripcion'); ?></th>
+            <th><?php echo $this->Paginator->sort('picture','Foto'); ?></th>
+            <th><?php echo $this->Paginator->sort('days','Dias'); ?></th>
+            <th><?php echo $this->Paginator->sort('nights','Noches'); ?></th>
+            <th><?php echo $this->Paginator->sort('departure','Salida'); ?></th>
+            <th><?php echo $this->Paginator->sort('arrival','Llegada'); ?></th>
+            <th><?php echo $this->Paginator->sort('location_id','Destino'); ?></th>
+            <th><?php echo $this->Paginator->sort('entrepreneur_id','Emprendedor'); ?></th>
+            <th><?php echo $this->Paginator->sort('created','Creado'); ?></th>
+            <th><?php echo $this->Paginator->sort('modified','Modifidicado'); ?></th>
             <th class="actions"><?php echo __('Actions'); ?></th>
         </tr>
         <?php foreach ($experiences as $experience): ?>

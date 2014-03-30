@@ -8,7 +8,7 @@
 		echo $this->Form->input('picture', array('label' => 'Foto'));
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Agregar')); ?>
 </div>
 <div class="actions">
 	<?php echo $this->element('menu'); ?>

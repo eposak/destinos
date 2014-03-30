@@ -1,29 +1,29 @@
 <div class="entrepreneurs form">
 <?php echo $this->Form->create('Entrepreneur'); ?>
 	<fieldset>
-		<legend><?php echo __('Add Entrepreneur'); ?></legend>
+		<legend><?php echo __('Nuevo Emprendedor'); ?></legend>
 	<?php
-		echo $this->Form->input('firstname');
-		echo $this->Form->input('lastname');
-		echo $this->Form->input('gender');
-		echo $this->Form->input('picture');
-		echo $this->Form->input('slug');
-		echo $this->Form->input('description');
-		echo $this->Form->input('phone1');
-		echo $this->Form->input('phone2');
-		echo $this->Form->input('email');
-		echo $this->Form->input('website');
-		echo $this->Form->input('address');
+		echo $this->Form->input('firstname', array('label' => 'Nombre'));
+		echo $this->Form->input('lastname', array('label' => 'Apellido'));
+		echo $this->Form->input('gender', array('label' => 'Sexo'));
+		echo $this->Form->input('picture', array('label' => 'Foto'));
+		echo $this->Form->input('slug', array('label' => 'Slug'));
+		echo $this->Form->input('description', array('label' => 'Descripción'));
+		echo $this->Form->input('phone1', array('label' => 'Telefono'));
+		echo $this->Form->input('phone2', array('label' => 'Telefono'));
+		echo $this->Form->input('email', array('label' => 'Correo'));
+		echo $this->Form->input('website', array('label' => 'Pag. Web'));
+		echo $this->Form->input('address', array('label' => 'Dirección'));
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Agregar')); ?>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Menú'); ?></h3>
 	<ul>
 
-		<li><?php echo $this->Html->link(__('List Entrepreneurs'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Experiences'), array('controller' => 'experiences', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Experience'), array('controller' => 'experiences', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Lista Emprendedores'), array('action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('Lista Experiencia'), array('controller' => 'experiences', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nueva Experiencia'), array('controller' => 'experiences', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

@@ -1,21 +1,22 @@
 <div class="entrepreneurs index">
-	<h2><?php echo __('Entrepreneurs'); ?></h2>
+	<h2><?php echo __('Emprendedores'); ?></h2>
+        <div class="actions"><?php echo $this->Html->link('Nuevo', array('action' => 'add'));?></div>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('firstname'); ?></th>
-			<th><?php echo $this->Paginator->sort('lastname'); ?></th>
-			<th><?php echo $this->Paginator->sort('gender'); ?></th>
-			<th><?php echo $this->Paginator->sort('picture'); ?></th>
-			<th><?php echo $this->Paginator->sort('slug'); ?></th>
-			<th><?php echo $this->Paginator->sort('description'); ?></th>
-			<th><?php echo $this->Paginator->sort('phone1'); ?></th>
-			<th><?php echo $this->Paginator->sort('phone2'); ?></th>
-			<th><?php echo $this->Paginator->sort('email'); ?></th>
-			<th><?php echo $this->Paginator->sort('website'); ?></th>
-			<th><?php echo $this->Paginator->sort('address'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
+			<th><?php echo $this->Paginator->sort('firstname','Nombre'); ?></th>
+			<th><?php echo $this->Paginator->sort('lastname','Apellido'); ?></th>
+			<th><?php echo $this->Paginator->sort('gender','Sexo'); ?></th>
+			<th><?php echo $this->Paginator->sort('picture','Foto'); ?></th>
+			<th><?php echo $this->Paginator->sort('slug',''); ?></th>
+			<th><?php echo $this->Paginator->sort('description','Descripcion'); ?></th>
+			<th><?php echo $this->Paginator->sort('phone1','Telefono'); ?></th>
+			<th><?php echo $this->Paginator->sort('phone2','Telefono'); ?></th>
+			<th><?php echo $this->Paginator->sort('email','Correo'); ?></th>
+			<th><?php echo $this->Paginator->sort('website','Pagina Web'); ?></th>
+			<th><?php echo $this->Paginator->sort('address','Dirección'); ?></th>
+			<th><?php echo $this->Paginator->sort('created','Creado'); ?></th>
+			<th><?php echo $this->Paginator->sort('modified','Modificado'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($entrepreneurs as $entrepreneur): ?>
@@ -59,8 +60,8 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('New Entrepreneur'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Experiences'), array('controller' => 'experiences', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Experience'), array('controller' => 'experiences', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nuevo Emprendedore'), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('Lista Experiencia'), array('controller' => 'experiences', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nueva Experiencia'), array('controller' => 'experiences', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

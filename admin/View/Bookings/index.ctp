@@ -1,17 +1,19 @@
 <div class="bookings index">
-	<h2><?php echo __('Bookings'); ?></h2>
+	<h2><?php echo __('Reservas'); ?></h2>
+        <div class="actions"><?php echo $this->Html->link('Nuevo', array('action' => 'add'));?></div>
+        
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('firstname'); ?></th>
-			<th><?php echo $this->Paginator->sort('lastname'); ?></th>
-			<th><?php echo $this->Paginator->sort('phone'); ?></th>
-			<th><?php echo $this->Paginator->sort('email'); ?></th>
-			<th><?php echo $this->Paginator->sort('guests'); ?></th>
-			<th><?php echo $this->Paginator->sort('comments'); ?></th>
-			<th><?php echo $this->Paginator->sort('lender_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
+			<th><?php echo $this->Paginator->sort('firstname','Nombre'); ?></th>
+			<th><?php echo $this->Paginator->sort('lastname','Apellido'); ?></th>
+			<th><?php echo $this->Paginator->sort('phone','Telefono'); ?></th>
+			<th><?php echo $this->Paginator->sort('email','Correo'); ?></th>
+			<th><?php echo $this->Paginator->sort('guests','Personas'); ?></th>
+			<th><?php echo $this->Paginator->sort('comments','Comentarios'); ?></th>
+                        <th><?php echo $this->Paginator->sort('lender_id',''); ?></th>
+			<th><?php echo $this->Paginator->sort('created','Creado'); ?></th>
+			<th><?php echo $this->Paginator->sort('modified','Modificado'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($bookings as $booking): ?>
@@ -51,5 +53,5 @@
 	</div>
 </div>
 <div class="actions">
-    <?php echo $this->element('menu'); ?>
+    <?php echo $this->element('Menu'); ?>
 </div>

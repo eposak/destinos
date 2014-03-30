@@ -6,12 +6,12 @@
 			<?php echo h($entrepreneur['Entrepreneur']['id']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Firstname'); ?></dt>
+		<dt><?php echo __('Nombre'); ?></dt>
 		<dd>
 			<?php echo h($entrepreneur['Entrepreneur']['firstname']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Lastname'); ?></dt>
+		<dt><?php echo __('Apellido'); ?></dt>
 		<dd>
 			<?php echo h($entrepreneur['Entrepreneur']['lastname']); ?>
 			&nbsp;
