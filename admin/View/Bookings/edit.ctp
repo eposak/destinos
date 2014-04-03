@@ -1,32 +1,32 @@
 <div class="bookings form">
 <?php echo $this->Form->create('Booking'); ?>
 	<fieldset>
-		<legend><?php echo __('Edit Booking'); ?></legend>
+		<legend><?php echo __('Editar Reservas'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
-		echo $this->Form->input('firstname');
-		echo $this->Form->input('lastname');
-		echo $this->Form->input('phone');
-		echo $this->Form->input('email');
-		echo $this->Form->input('guests');
-		echo $this->Form->input('comments');
-		echo $this->Form->input('lender_id');
-		echo $this->Form->input('Experience');
+		echo $this->Form->input('firstname', array('label' => 'Nombre'));
+		echo $this->Form->input('lastname', array('label' => 'Apellido'));
+		echo $this->Form->input('phone', array('label' => 'Telefono'));
+		echo $this->Form->input('email', array('label' => 'Correo'));
+		echo $this->Form->input('guests', array('label' => 'Acompañantes'));
+		echo $this->Form->input('comments', array('label' => 'Comentarios'));
+		echo $this->Form->input('lender_id', array('label' => 'lender_id'));
+		echo $this->Form->input('Experience', array('label' => 'Experiencia'));
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Aceptar')); ?>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Menú'); ?></h3>
 	<ul>
 
-		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Booking.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('Booking.id'))); ?></li>
-		<li><?php echo $this->Html->link(__('List Bookings'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Lenders'), array('controller' => 'lenders', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Lender'), array('controller' => 'lenders', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Events'), array('controller' => 'events', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Event'), array('controller' => 'events', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Experiences'), array('controller' => 'experiences', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Experience'), array('controller' => 'experiences', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $this->Form->value('Booking.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('Booking.id'))); ?></li>
+		<li><?php echo $this->Html->link(__('Lista Reservas'), array('action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('Lista Lenders'), array('controller' => 'lenders', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nuevo Lender'), array('controller' => 'lenders', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Lista Eventos'), array('controller' => 'events', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nuevo Evento'), array('controller' => 'events', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Lista Experiencia'), array('controller' => 'experiences', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nueva Experiencia'), array('controller' => 'experiences', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

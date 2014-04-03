@@ -1,7 +1,5 @@
 <div class="bookings index">
-	<h2><?php echo __('Reservas'); ?></h2>
-        <div class="actions"><?php echo $this->Html->link('Nuevo', array('action' => 'add'));?></div>
-        
+	<h2><?php echo __('Reservas'); ?></h2>     
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
@@ -46,12 +44,18 @@
 	?>	</p>
 	<div class="paging">
 	<?php
-		echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
+		echo $this->Paginator->prev('< ' . __('Atras'), array(), null, array('class' => 'prev disabled'));
 		echo $this->Paginator->numbers(array('separator' => ''));
-		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
+		echo $this->Paginator->next(__('Adelante') . ' >', array(), null, array('class' => 'next disabled'));
 	?>
 	</div>
 </div>
 <div class="actions">
     <?php echo $this->element('Menu'); ?>
+</div>
+<div class="actions">
+    <h1><?php echo __('Sub Menú'); ?></h1>
+    <h1><?php echo $this->Html->link('Nuevo', array('action' => 'add'));?></h1>
+    <h1>    </h1>
+    <h1><?php echo $this->Html->link('Salir', array('action' => ' '));?></h1>
 </div>

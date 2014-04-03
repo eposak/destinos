@@ -1,22 +1,22 @@
 <div class="bookings view">
-<h2><?php echo __('Booking'); ?></h2>
+<h2><?php echo __('Reservas'); ?></h2>
 	<dl>
 		<dt><?php echo __('Id'); ?></dt>
 		<dd>
 			<?php echo h($booking['Booking']['id']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Firstname'); ?></dt>
+		<dt><?php echo __('Nombre'); ?></dt>
 		<dd>
 			<?php echo h($booking['Booking']['firstname']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Lastname'); ?></dt>
+		<dt><?php echo __('Apellido'); ?></dt>
 		<dd>
 			<?php echo h($booking['Booking']['lastname']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Phone'); ?></dt>
+		<dt><?php echo __('Telefono'); ?></dt>
 		<dd>
 			<?php echo h($booking['Booking']['phone']); ?>
 			&nbsp;
@@ -26,12 +26,12 @@
 			<?php echo h($booking['Booking']['email']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Guests'); ?></dt>
+		<dt><?php echo __('Visitantes'); ?></dt>
 		<dd>
 			<?php echo h($booking['Booking']['guests']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Comments'); ?></dt>
+		<dt><?php echo __('Comentarios'); ?></dt>
 		<dd>
 			<?php echo h($booking['Booking']['comments']); ?>
 			&nbsp;
@@ -41,12 +41,12 @@
 			<?php echo $this->Html->link($booking['Lender']['firstname'], array('controller' => 'lenders', 'action' => 'view', $booking['Lender']['id'])); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Created'); ?></dt>
+		<dt><?php echo __('Creado'); ?></dt>
 		<dd>
 			<?php echo h($booking['Booking']['created']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
+		<dt><?php echo __('Modificado'); ?></dt>
 		<dd>
 			<?php echo h($booking['Booking']['modified']); ?>
 			&nbsp;
@@ -54,18 +54,18 @@
 	</dl>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Menú'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Edit Booking'), array('action' => 'edit', $booking['Booking']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Booking'), array('action' => 'delete', $booking['Booking']['id']), null, __('Are you sure you want to delete # %s?', $booking['Booking']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Bookings'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Booking'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Lenders'), array('controller' => 'lenders', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Lender'), array('controller' => 'lenders', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Events'), array('controller' => 'events', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Event'), array('controller' => 'events', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Experiences'), array('controller' => 'experiences', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Experience'), array('controller' => 'experiences', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Editar Reservas'), array('action' => 'edit', $booking['Booking']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Borrar Reservas'), array('action' => 'delete', $booking['Booking']['id']), null, __('Are you sure you want to delete # %s?', $booking['Booking']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('Lista reservas'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nueva reservas'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Lista Lenders'), array('controller' => 'lenders', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nuevo Lender'), array('controller' => 'lenders', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Lista Eventos'), array('controller' => 'events', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nuevo Evento'), array('controller' => 'events', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Lista Experiencias'), array('controller' => 'experiences', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nueva Experiencia'), array('controller' => 'experiences', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
 <div class="related">

@@ -1,6 +1,6 @@
 <div class="users form">
 <?php echo $this->Session->flash('auth'); ?>
-<?php echo $this->Form->create('User'); ?>
+<?php echo $this->Form->create('user'); ?>
     <fieldset>
         <legend>
             <?php echo __('Ingrese su nombre de usuario y password'); ?>

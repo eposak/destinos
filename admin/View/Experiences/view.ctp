@@ -1,62 +1,62 @@
 <div class="experiences view">
-<h2><?php echo __('Experience'); ?></h2>
+<h2><?php echo __('Experiencia'); ?></h2>
 	<dl>
-		<dt><?php echo __('Id'); ?></dt>
+            <dt><?php echo __('Id'); ?></dt>
 		<dd>
 			<?php echo h($experience['Experience']['id']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Title'); ?></dt>
+		<dt><?php echo __('Titulo'); ?></dt>
 		<dd>
 			<?php echo h($experience['Experience']['title']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Description'); ?></dt>
+		<dt><?php echo __('Descripcion'); ?></dt>
 		<dd>
 			<?php echo h($experience['Experience']['description']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Picture'); ?></dt>
+		<dt><?php echo __('Foto'); ?></dt>
 		<dd>
 			<?php echo h($experience['Experience']['picture']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Days'); ?></dt>
+		<dt><?php echo __('Dias'); ?></dt>
 		<dd>
 			<?php echo h($experience['Experience']['days']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Nights'); ?></dt>
+		<dt><?php echo __('Noches'); ?></dt>
 		<dd>
 			<?php echo h($experience['Experience']['nights']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Departure'); ?></dt>
+		<dt><?php echo __('Salida'); ?></dt>
 		<dd>
 			<?php echo h($experience['Experience']['departure']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Arrival'); ?></dt>
+		<dt><?php echo __('Llegada'); ?></dt>
 		<dd>
 			<?php echo h($experience['Experience']['arrival']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Location'); ?></dt>
+		<dt><?php echo __('Destino'); ?></dt>
 		<dd>
 			<?php echo $this->Html->link($experience['Location']['title'], array('controller' => 'locations', 'action' => 'view', $experience['Location']['id'])); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Entrepreneur'); ?></dt>
+		<dt><?php echo __('Emprendedor'); ?></dt>
 		<dd>
 			<?php echo $this->Html->link($experience['Entrepreneur']['firstname'], array('controller' => 'entrepreneurs', 'action' => 'view', $experience['Entrepreneur']['id'])); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Created'); ?></dt>
+		<dt><?php echo __('Creado'); ?></dt>
 		<dd>
 			<?php echo h($experience['Experience']['created']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
+		<dt><?php echo __('Modificado'); ?></dt>
 		<dd>
 			<?php echo h($experience['Experience']['modified']); ?>
 			&nbsp;
@@ -64,22 +64,22 @@
 	</dl>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Menú'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Edit Experience'), array('action' => 'edit', $experience['Experience']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Experience'), array('action' => 'delete', $experience['Experience']['id']), null, __('Are you sure you want to delete # %s?', $experience['Experience']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Experiences'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Experience'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Locations'), array('controller' => 'locations', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Location'), array('controller' => 'locations', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Entrepreneurs'), array('controller' => 'entrepreneurs', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Entrepreneur'), array('controller' => 'entrepreneurs', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Itineraries'), array('controller' => 'itineraries', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Itinerary'), array('controller' => 'itineraries', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Bookings'), array('controller' => 'bookings', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Booking'), array('controller' => 'bookings', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Photos'), array('controller' => 'photos', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Photo'), array('controller' => 'photos', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Editar Experiencia'), array('action' => 'edit', $experience['Experience']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Borrar Experiencia'), array('action' => 'delete', $experience['Experience']['id']), null, __('Are you sure you want to delete # %s?', $experience['Experience']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('Lista Experiencias'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nueva Experiencia'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Lista Destino'), array('controller' => 'locations', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nuevo Destino'), array('controller' => 'locations', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Lista Emprendedor'), array('controller' => 'entrepreneurs', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nuevo Emprendedor'), array('controller' => 'entrepreneurs', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Lista Itinerarios'), array('controller' => 'itineraries', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nuevo Itinerario'), array('controller' => 'itineraries', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Lista Reservas'), array('controller' => 'bookings', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nueva Reserva'), array('controller' => 'bookings', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Lista Fotos'), array('controller' => 'photos', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nueva Foto'), array('controller' => 'photos', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
 <div class="related">

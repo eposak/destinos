@@ -35,9 +35,9 @@ class AppController extends Controller {
     
     public $helpers = array('Html', 'Form', 'Js');
     
-    public function beforeFilter() {
+  public function beforeFilter() {
         
-        // $this->Auth->allow('display');
+        $this->Auth->allow();
         $this->Auth->loginRedirect = array('controller' => 'locations', 'action' => 'index');
         $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login');
         $this->Auth->authError = 'Acceso no permitido';

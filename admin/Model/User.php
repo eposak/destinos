@@ -1,6 +1,6 @@
 <?php
 
-// app/Model/User.php
+//app/Model/User.php
 App::uses('AppModel', 'Model');
 
 class User extends AppModel {
@@ -8,7 +8,7 @@ class User extends AppModel {
     public function beforeSave($options = array()) {
         parent::beforeSave($options);
         if (isset($this->data[$this->alias]['password'])) {
-            $this->data[$this->alias]['password'] = AuthComponent::password($this->data[$this->alias]['password']);
+           $this->data[$this->alias]['password'] = AuthComponent::password($this->data[$this->alias]['password']);
         }
     }
     

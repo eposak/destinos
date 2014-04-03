@@ -1,6 +1,5 @@
 <div class="locations index">
     <h2><?php echo __('Lista de Destinos'); ?></h2>
-    <div class="actions"><?php echo $this->Html->link('Nuevo', array('action' => 'add'));?></div>
     <table cellpadding="0" cellspacing="0">
         <tr>
             <th> <?php echo $this->Paginator->sort('title', 'Nombre'); ?></th>
@@ -16,9 +15,9 @@
                 <td><?php echo h($location['Location']['created']); ?>&nbsp;</td>
                 <td><?php echo h($location['Location']['modified']); ?>&nbsp;</td>
                 <td class="actions">
-                    <?php echo $this->Html->link(__('View'), array('action' => 'view', $location['Location']['id'])); ?>
-                    <?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $location['Location']['id'])); ?>
-                    <?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $location['Location']['id']), null, __('Are you sure you want to delete # %s?', $location['Location']['id'])); ?>
+                    <?php echo $this->Html->link(__('Ver'), array('action' => 'view', $location['Location']['id'])); ?>
+                    <?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $location['Location']['id'])); ?>
+                    <?php echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $location['Location']['id']), null, __('Are you sure you want to delete # %s?', $location['Location']['id'])); ?>
                 </td>
             </tr>
         <?php endforeach; ?>
@@ -31,12 +30,18 @@
         ?>	</p>
     <div class="paging">
         <?php
-        echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
+        echo $this->Paginator->prev('< ' . __('Atras'), array(), null, array('class' => 'prev disabled'));
         echo $this->Paginator->numbers(array('separator' => ''));
-        echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
+        echo $this->Paginator->next(__('Adelante') . ' >', array(), null, array('class' => 'next disabled'));
         ?>
     </div>
 </div>
 <div class="actions">
     <?php echo $this->element('menu'); ?>
+</div>
+<div class="actions">
+    <h1><?php echo __('Sub Menú'); ?></h1>
+    <h1><?php echo $this->Html->link('Nuevo', array('action' => 'add'));?></h1>
+    <h1>    </h1>
+    <h1><?php echo $this->Html->link('Salir', array('action' => ' '));?></h1>
 </div>

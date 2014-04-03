@@ -16,14 +16,14 @@
 		echo $this->Form->input('address', array('label' => 'Dirección'));
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Agregar')); ?>
+<?php echo $this->Form->end(__('Aceptar')); ?>
 </div>
 <div class="actions">
 	<h3><?php echo __('Menú'); ?></h3>
 	<ul>
 
-		<li><?php echo $this->Html->link(__('Lista Emprendedores'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('Lista Experiencia'), array('controller' => 'experiences', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('Nueva Experiencia'), array('controller' => 'experiences', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Lista Emprendedor'), array('action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('Lista Experiencia  '), array('controller' => 'experiences', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nueva Experiencia  '), array('controller' => 'experiences', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

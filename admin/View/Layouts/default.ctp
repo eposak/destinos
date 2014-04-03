@@ -16,7 +16,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
+$cakeDescription = __d('cake_dev', 'DESTINOS');
 ?>
 <!DOCTYPE html>
 <html>
@@ -42,7 +42,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
             
 		<div id="header">
 			<h1>Destinos Eposak (Administrador) </h1>
-                        <?php echo $this->Html->image('logo.png');?>
+                        <?php echo $this->Html->image('logo2.png');?>
                         
 		</div>
 		<div id="content">
