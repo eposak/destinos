@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Application level Controller
  *
@@ -30,18 +31,25 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
-    
+
     public $components = array('DebugKit.Toolbar', 'Paginator', 'Session', 'Auth');
-    
     public $helpers = array('Html', 'Form', 'Js');
-    
-  public function beforeFilter() {
+
+    public function beforeFilter() {
+        parent::beforeFilter();
         
-        $this->Auth->allow();
+        $this->Auth->allow('display');
+        
+        $this->Auth->authenticate = array(
+            'Form' => array(
+                'userModel' => 'User',
+                'fields' => array('username' => 'username', 'password' => 'password')
+            )
+        );
+
         $this->Auth->loginRedirect = array('controller' => 'locations', 'action' => 'index');
         $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login');
         $this->Auth->authError = 'Acceso no permitido';
     }
-    
-    
+
 }
