@@ -53,9 +53,3 @@
 <div class="actions">
     <?php echo $this->element('Menu'); ?>
 </div>
-<div class="actions">
-    <h1><?php echo __('Sub Menú'); ?></h1>
-    <h1><?php echo $this->Html->link('Nuevo', array('action' => 'add'));?></h1>
-    <h1>    </h1>
-    <h1><?php echo $this->Html->link('Salir', array('action' => ' '));?></h1>
-</div>
